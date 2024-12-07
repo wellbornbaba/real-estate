@@ -8,8 +8,10 @@ export const properties = [
       bedrooms: 2,
       bathrooms: 4,
       parking: 1,
+      garages:0,
       type: "Villa",
       year: 2024,
+      description: "this is a very good property",
     },
     {
       id: 2,
@@ -20,8 +22,10 @@ export const properties = [
       bedrooms: 6,
       bathrooms: 2,
       parking: 1,
+      garages: 0,
       type: "Apartment",
       year: 2024,
+      description: "this is a very good property",
     },
     // Add more properties...
   ];
