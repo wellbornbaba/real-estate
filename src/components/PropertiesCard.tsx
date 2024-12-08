@@ -2,12 +2,17 @@ import React from 'react'
 import Image from "next/image";
 import { formatCurrency } from '@/constant/helper';
 import { MdOutlineBedroomParent } from 'react-icons/md';
+import { FaImages } from "react-icons/fa6";
+import { IoIosVideocam } from "react-icons/io";
+import { CiLocationOn } from "react-icons/ci";
+import { BsBadge3D } from "react-icons/bs";
+
 
 type PropertiesProps = {
     id: number;
     title: string;
     price: number;
-    image: string;
+    image: any;
     location: string;
     type: string;
     bedrooms: number;
@@ -35,7 +40,7 @@ export default function PropertiesCard({
   return (
     <div key={id} className="border p-0 relative shadow-2xl rounded-br-xl rounded-bl-xl">
               <Image
-                src={`${image}${id}.png`}
+                src={`${image[1]}`}
                 alt={title}
                 className="w-full h-48 object-cover"
                 width={500}
@@ -43,10 +48,10 @@ export default function PropertiesCard({
               />
               <div className="absolute flex p-2 justify-between items-start z-50 top-1 w-full">
                 <div>
-                  <p>ImageIcon</p>
-                  <p>VideoIcon</p>
-                  <p>LocationIcon</p>
-                  <p>3DIcon</p>
+                <FaImages size={24} />
+                <IoIosVideocam size={24} />
+                <CiLocationOn size={24} />
+                <BsBadge3D size={24} />
                 </div>
 
                 <span className=" bg-slate-100 rounded text-teal-600  font-extrabold px-2">
@@ -54,35 +59,17 @@ export default function PropertiesCard({
                 </span>
               </div>
 
-              <div className="py-2 flex justify-between items-center">
-                <Image
-                  src={`/gow1.png`}
-                  alt={title}
-                  className="w-24 h-12 mr-1 rounded"
-                  width={65}
-                  height={45}
-                />
-                <Image
-                  src={`/gow2.png`}
-                  alt={title}
-                  className="w-24 h-12 mr-1 rounded"
-                  width={65}
-                  height={45}
-                />
-                <Image
-                  src={`/gow3.png`}
-                  alt={title}
-                  className="w-24 h-12 mr-1 rounded"
-                  width={65}
-                  height={45}
-                />
-                <Image
-                  src={`/gow4.png`}
-                  alt={title}
-                  className="w-24 h-12 mr-1 rounded"
-                  width={65}
-                  height={45}
-                />
+              <div className="py-2 flex justify-between items-center px-1">
+                {image.map((img: any) =>(
+                  <Image
+                    src={img}
+                    alt={title}
+                    className="w-24 h-12 mr-1 rounded"
+                    width={65}
+                    height={45}
+                  />
+                ))}
+                
               </div>
               <div className="px-2">
                 <h2 className="text-lg font-bold">{title}</h2>
