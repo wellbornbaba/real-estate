@@ -12,6 +12,7 @@ type SubProps = {
   }[];
 };
 
+
 export default function SubHeader({
   title,
   bgimage,
@@ -23,8 +24,8 @@ export default function SubHeader({
   return (
     <>
     <section className={`overflow-hidden bg-[url(${bgimage ? bgimage : "https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"})] bg-cover bg-top bg-no-repeat h-64`}>
-      <div className="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-2">
-        {navlink && <nav aria-label="Breadcrumb" className="flex">
+      <div className="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-2 h-64">
+        <nav aria-label="Breadcrumb" className="flex">
           <ol className="flex overflow-hidden rounded-lg border border-gray-200 text-gray-600">
             <li className="flex items-center">
                 {/* {navlink.map((dlink, index) => {
@@ -74,13 +75,13 @@ export default function SubHeader({
               </Link>
             </li>
           </ol>
-        </nav>}
-        <div className="text-center ltr:sm:text-left rtl:sm:text-right">
+        </nav>
+        <div className="text-center ltr:sm:text-left rtl:sm:text-right mt-4">
           <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
            {title}
           </h2>
 
-          <p className="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
+          <p className="hidden  text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
            {description}
           </p>
         </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
@@ -185,40 +186,40 @@ export default function Footer() {
 
                   <ul className="mt-6 space-y-4 text-sm">
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/lands"
                         className="text-gray-700 transition hover:opacity-75"
                       >
 
                         Real Estate
-                      </a>
+                      </Link>
                     </li>
 
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/rental"
                         className="text-gray-700 transition hover:opacity-75"
                       >
                         Renting
-                      </a>
+                      </Link>
                     </li>
 
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/accomodation"
                         className="text-gray-700 transition hover:opacity-75"
                       >
                         Accomodation
-                      </a>
+                      </Link>
                     </li>
 
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/lands"
                         className="text-gray-700 transition hover:opacity-75"
                       >
                        Land Purchase
-                      </a>
+                      </Link>
                     </li>
 
                   </ul>
@@ -229,21 +230,21 @@ export default function Footer() {
 
                   <ul className="mt-6 space-y-4 text-sm">
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/aboutus"
                         className="text-gray-700 transition hover:opacity-75"
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
 
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/agency"
                         className="text-gray-700 transition hover:opacity-75"
                       >
                        Agency
-                      </a>
+                      </Link>
                     </li>
 
                     <li>

@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen w-full font-geist-sans:n2 font-geist-mono:n1 text-gray-900 bg-gray-100`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen w-full font-geist-sans:n2 font-geist-mono:n1 text-gray-200 bg-gray-100`}
       >
         <SearchProvider>
           <NavBar />

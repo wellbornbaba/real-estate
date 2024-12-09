@@ -7,10 +7,12 @@ import { IoIosVideocam } from "react-icons/io";
 import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
 import { BsBadge3D } from "react-icons/bs";
 import { TbCarGarage } from "react-icons/tb";
+import { useRouter } from "next/navigation";
 
 
 type PropertiesProps = {
   id: number;
+  slug: string;
   title: string;
   price: number;
   image: any;
@@ -26,6 +28,7 @@ type PropertiesProps = {
 
 export default function PropertiesCard({
   id,
+  slug,
   title,
   price,
   image,
@@ -38,10 +41,18 @@ export default function PropertiesCard({
   year,
   description,
 }: PropertiesProps) {
+  const router = useRouter();
+
+  const handleNavigation = (slug: string) => {
+    router.push(`/property/${slug}`);
+  };
+
+
   return (
     <div
       key={id}
-      className="border p-0 relative shadow-2xl rounded-br-xl rounded-bl-xl"
+      className="border p-0 relative shadow-2xl rounded-br-xl rounded-bl-xl cursor-pointer"
+      onClick={() => handleNavigation(slug) }
     >
       <Image
         src={`${image[1]}`}

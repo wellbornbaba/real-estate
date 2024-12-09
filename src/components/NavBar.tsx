@@ -49,6 +49,12 @@ export default function NavBar() {
           <div className="hidden md:block">
             <nav aria-label="Global">
               <ul className="flex items-center gap-6 text-sm">
+              <li>
+                  <Link href="/" className="text-gray-500 transition hover:text-gray-500/75">
+                  Home
+                  </Link>
+                  
+                </li>
                 <li>
                   <Link href="/aboutus" className="text-gray-500 transition hover:text-gray-500/75">
                   About
@@ -57,48 +63,48 @@ export default function NavBar() {
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    href="/rental"
                   >
                     Rental
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    href="/accomodation"
                   >
                     Accomodation
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    href="/lands"
                   >
                     Lands
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    href="/rooms"
                   >
                     Rooms
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    href="/contact-us"
                   >
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <input

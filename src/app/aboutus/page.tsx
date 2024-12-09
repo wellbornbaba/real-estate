@@ -1,20 +1,23 @@
 import SubHeader from "@/components/SubHeader";
-import Link from "next/link";
 import React from "react";
 
+const title = "About Us"
+const des = "Know more about us with our long lasting services"
+
+
 export const metadata = {
-  title: "About Us",
-  description: "About us page",
-  keywords: "about us, company, services",
+  title: title,
+  description: des,
+  keywords: `${title}, company, services`,
   openGraph: {
-    title: "About Us",
-    description: "About us page",
+    title: title,
+    description: des,
     images: [
       {
         url: "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=2670&auto=format&fit=crop",
         width: 800,
         height: 600,
-        alt: "Open Graph Image",
+        alt: {title},
       },
     ],
   },
@@ -23,7 +26,7 @@ export const metadata = {
 export default function page() {
   return (
     <>
-      <SubHeader title="About Us" />
+      <SubHeader title={title} description={des} />
 
       <section>
         <div className="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
@@ -46,7 +49,7 @@ export default function page() {
                     href="#"
                     className="inline-block rounded border border-white bg-white px-12 py-3 text-sm font-medium text-blue-500 transition hover:bg-transparent hover:text-white focus:outline-none focus:ring focus:ring-yellow-400"
                   >
-                    Get Started Today
+                    Book An Appointment with Us Today
                   </a>
                 </div>
               </div>
