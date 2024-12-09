@@ -57,8 +57,7 @@ export default function Footer() {
                 </div>
 
                 <p className="mt-4 max-w-xs text-gray-500">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
-                  non cupiditate quae nam molestias.
+                  This is a real estate company that lead in properties search, land leasing, renting and real estate development 
                 </p>
 
                 <ul className="mt-8 flex gap-6">
@@ -190,8 +189,8 @@ export default function Footer() {
                         href="#"
                         className="text-gray-700 transition hover:opacity-75"
                       >
-                        {" "}
-                        1on1 Coaching{" "}
+
+                        Real Estate
                       </a>
                     </li>
 
@@ -200,8 +199,7 @@ export default function Footer() {
                         href="#"
                         className="text-gray-700 transition hover:opacity-75"
                       >
-                        {" "}
-                        Company Review{" "}
+                        Renting
                       </a>
                     </li>
 
@@ -210,8 +208,7 @@ export default function Footer() {
                         href="#"
                         className="text-gray-700 transition hover:opacity-75"
                       >
-                        {" "}
-                        Accounts Review{" "}
+                        Accomodation
                       </a>
                     </li>
 
@@ -220,20 +217,10 @@ export default function Footer() {
                         href="#"
                         className="text-gray-700 transition hover:opacity-75"
                       >
-                        {" "}
-                        HR Consulting{" "}
+                       Land Purchase
                       </a>
                     </li>
 
-                    <li>
-                      <a
-                        href="#"
-                        className="text-gray-700 transition hover:opacity-75"
-                      >
-                        {" "}
-                        SEO Optimisation{" "}
-                      </a>
-                    </li>
                   </ul>
                 </div>
 
@@ -246,8 +233,7 @@ export default function Footer() {
                         href="#"
                         className="text-gray-700 transition hover:opacity-75"
                       >
-                        {" "}
-                        About{" "}
+                        About Us
                       </a>
                     </li>
 
@@ -256,8 +242,7 @@ export default function Footer() {
                         href="#"
                         className="text-gray-700 transition hover:opacity-75"
                       >
-                        {" "}
-                        Meet the Team{" "}
+                       Agency
                       </a>
                     </li>
 
@@ -266,8 +251,7 @@ export default function Footer() {
                         href="#"
                         className="text-gray-700 transition hover:opacity-75"
                       >
-                        {" "}
-                        Accounts Review{" "}
+                        Book An Appointment 
                       </a>
                     </li>
                   </ul>
@@ -282,8 +266,8 @@ export default function Footer() {
                         href="#"
                         className="text-gray-700 transition hover:opacity-75"
                       >
-                        {" "}
-                        Contact{" "}
+                        
+                        Contact
                       </a>
                     </li>
 
@@ -292,8 +276,8 @@ export default function Footer() {
                         href="#"
                         className="text-gray-700 transition hover:opacity-75"
                       >
-                        {" "}
-                        FAQs{" "}
+                        
+                        FAQs
                       </a>
                     </li>
 
@@ -302,8 +286,8 @@ export default function Footer() {
                         href="#"
                         className="text-gray-700 transition hover:opacity-75"
                       >
-                        {" "}
-                        Live Chat{" "}
+                        
+                        Live Chat
                       </a>
                     </li>
                   </ul>
@@ -318,8 +302,8 @@ export default function Footer() {
                         href="#"
                         className="text-gray-700 transition hover:opacity-75"
                       >
-                        {" "}
-                        Accessibility{" "}
+                        
+                        Terms and Conditions
                       </a>
                     </li>
 
@@ -328,8 +312,8 @@ export default function Footer() {
                         href="#"
                         className="text-gray-700 transition hover:opacity-75"
                       >
-                        {" "}
-                        Returns Policy{" "}
+                        
+                        Privacy and Policy
                       </a>
                     </li>
 
@@ -338,27 +322,19 @@ export default function Footer() {
                         href="#"
                         className="text-gray-700 transition hover:opacity-75"
                       >
-                        {" "}
-                        Refund Policy{" "}
+                        
+                        Refund Policy
                       </a>
                     </li>
 
-                    <li>
-                      <a
-                        href="#"
-                        className="text-gray-700 transition hover:opacity-75"
-                      >
-                        {" "}
-                        Hiring Statistics{" "}
-                      </a>
-                    </li>
+                    
                   </ul>
                 </div>
               </div>
             </div>
 
             <p className="text-xs text-gray-500">
-              &copy; 2022. Company Name. All rights reserved.
+              &copy; 2024. NduHomes. All rights reserved.
             </p>
           </div>
         </footer>

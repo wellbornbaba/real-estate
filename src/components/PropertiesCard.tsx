@@ -64,8 +64,9 @@ export default function PropertiesCard({
       </div>
 
       <div className="py-2 flex justify-between items-center px-1">
-        {image.map((img: any) => (
+        {image.map((img: any, index: string) => (
           <Image
+          key={index}
             src={img}
             alt={title}
             className="w-24 h-12 mr-1 rounded"
@@ -77,7 +78,7 @@ export default function PropertiesCard({
       <div className="px-2">
         <h2 className="text-lg font-bold text-gray-700">
           {title}
-          <span className="text-lg font-bold text-gray-400">({type})</span>
+          <span className="text-sm font-bold text-gray-400 ml-2">({type})</span>
         </h2>
 
         <p className="text-gray-600 flex flex-row items-center">

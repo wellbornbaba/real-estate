@@ -5,7 +5,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-// import { properties } from "@/constant/data";
+import { SearchProvider } from "@/context/SearchContect";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,33 +29,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // const handleSearch = (query: string) => {
-  //   // TODO: Implement search functionality
-  //   console.log(`Searching for: ${query}`);
-  //   setQuery(query);
-  // }
-
-  // const [filteredProperties, setFilteredProperties] = useState(properties);
-
-  // const handleSearch = (query: string) => {
-  //   const lowerQuery = query.toLowerCase();
-  //   const results = properties.filter(
-  //     (property) =>
-  //       property.title.toLowerCase().includes(lowerQuery) ||
-  //       property.location.toLowerCase().includes(lowerQuery) ||
-  //       property.price.toString().includes(lowerQuery)
-  //   );
-  //   setFilteredProperties(results);
-  // };
-
   
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen w-full font-geist-sans:n2 font-geist-mono:n1 text-gray-900 bg-gray-100`}
       >
-        <NavBar />
-        <main>{children}</main>
+        <SearchProvider>
+          <NavBar />
+          <main>{children}</main>
+        </SearchProvider>
         <Footer />
       </body>
     </html>

@@ -28,7 +28,21 @@ export const properties = [
       description: "this is a very good property"
     },
     {
-      id: 2,
+      id: 3,
+      title: "Abuja house",
+      location: "Lagos, Nigeria",
+      price: 50000,
+      image: ["/gow1.png","/gow2.png","/gow3.png","/gow4.png"],
+      bedrooms: 3,
+      bathrooms: 2,
+      parking: 2,
+      garages: 0,
+      type: "villa",
+      year: 2024,
+      description: "this is a very good property"
+    },
+    {
+      id: 4,
       title: "City Apartment",
       location: "New York",
       price: 850000,
@@ -42,7 +56,7 @@ export const properties = [
       description: "this is a very good property"
     },
     {
-      id: 2,
+      id: 5,
       title: "City Apartment",
       location: "New York",
       price: 850000,
@@ -56,7 +70,7 @@ export const properties = [
       description: "this is a very good property"
     },
     {
-      id: 2,
+      id: 6,
       title: "City Apartment",
       location: "New York",
       price: 850000,
@@ -70,7 +84,7 @@ export const properties = [
       description: "this is a very good property"
     },
     {
-      id: 2,
+      id: 7,
       title: "City Apartment",
       location: "New York",
       price: 850000,
@@ -84,7 +98,7 @@ export const properties = [
       description: "this is a very good property"
     },
     {
-      id: 2,
+      id: 8,
       title: "City Apartment",
       location: "New York",
       price: 850000,
@@ -98,7 +112,7 @@ export const properties = [
       description: "this is a very good property"
     },
     {
-      id: 2,
+      id: 9,
       title: "City Apartment",
       location: "New York",
       price: 850000,
@@ -112,7 +126,7 @@ export const properties = [
       description: "this is a very good property"
     },
     {
-      id: 2,
+      id: 10,
       title: "City Apartment",
       location: "New York",
       price: 850000,
@@ -126,21 +140,7 @@ export const properties = [
       description: "this is a very good property"
     },
     {
-      id: 2,
-      title: "City Apartment",
-      location: "New York",
-      price: 850000,
-      image: ["/gow1.png","/gow2.png","/gow3.png","/gow4.png"],
-      bedrooms: 6,
-      bathrooms: 2,
-      parking: 1,
-      garages: 0,
-      type: "Apartment",
-      year: 2024,
-      description: "this is a very good property"
-    },
-    {
-      id: 2,
+      id: 11,
       title: "City Apartment",
       location: "New York",
       price: 850000,
@@ -155,7 +155,7 @@ export const properties = [
     },
 
 {
-      id: 2,
+      id: 12,
       title: "City Apartment",
       location: "New York",
       price: 850000,
