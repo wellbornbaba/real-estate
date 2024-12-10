@@ -5,6 +5,7 @@ import Image from "next/image";
 import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
 import { MdOutlineBedroomParent } from "react-icons/md";
 import { TbCarGarage } from "react-icons/tb";
+// import { Metadata } from "next";
 
 export const metadata = {
   title: "",
@@ -12,19 +13,40 @@ export const metadata = {
   keywords: `company, services`,
 };
 
-const handleDragStart = (e: any) => e.preventDefault();
+interface PropertyPageProps {
+  params: {
+    slug: string;
+  };
+}
 
-// const images = [
-//   <img src="ttps://via.placeholder.com/800x400" onDragStart={handleDragStart} role="presentation" />,
-// 	<img src="https://via.placeholder.com/800x450" onDragStart={handleDragStart} role="presentation" />,
-// 	<img src="https://via.placeholder.com/800x500" onDragStart={handleDragStart} role="presentation" />,
-// ];
+// export async function generateMetadata({ params }: PropertyPageProps): Promise<Metadata> {
+//   const property = properties.find((p) => p.slug === params.slug);
 
-export default function PropertyPage({ params }: { params: { slug: string } }) {
+//   if (!property) {
+//     return {
+//       title: "Property Not Found",
+//       description: "This property does not exist.",
+//     };
+//   }
+
+//   return {
+//     title: `${property.title} - ${property.price}`,
+//     description: `${property.title} in ${property.location}`,
+//   };
+// }
+
+export async function generateStaticParams() {
+  return properties.map((property) => ({
+    slug: property.slug,
+  }));
+}
+
+
+export default async function PropertyPage({ params }: PropertyPageProps) {
   if (!params) {
     throw new Error("Property not found"); // or redirect to 404 page or similar
   }
-  const propertySlug = params?.slug;
+  const propertySlug = params.slug;
   const propertyData = properties.find(
     (property) => property.slug === propertySlug
   );
