@@ -5,7 +5,7 @@ import Image from "next/image";
 import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
 import { MdOutlineBedroomParent } from "react-icons/md";
 import { TbCarGarage } from "react-icons/tb";
-// import { Metadata } from "next";
+
 
 export const metadata = {
   title: "",
@@ -19,21 +19,6 @@ interface PropertyPageProps {
   };
 }
 
-// export async function generateMetadata({ params }: PropertyPageProps): Promise<Metadata> {
-//   const property = properties.find((p) => p.slug === params.slug);
-
-//   if (!property) {
-//     return {
-//       title: "Property Not Found",
-//       description: "This property does not exist.",
-//     };
-//   }
-
-//   return {
-//     title: `${property.title} - ${property.price}`,
-//     description: `${property.title} in ${property.location}`,
-//   };
-// }
 
 export async function generateStaticParams() {
   return properties.map((property) => ({
@@ -46,9 +31,9 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
   if (!params) {
     throw new Error("Property not found"); // or redirect to 404 page or similar
   }
-  const propertySlug = params.slug;
+  const {slug } = await params;
   const propertyData = properties.find(
-    (property) => property.slug === propertySlug
+    (property) => property.slug === slug
   );
 
   if (!propertyData) {
