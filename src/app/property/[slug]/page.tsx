@@ -21,10 +21,10 @@ const handleDragStart = (e: any) => e.preventDefault();
 // ];
 
 export default function PropertyPage({ params }: { params: { slug: string } }) {
-  if (!params.slug) {
+  if (!params) {
     throw new Error("Property not found"); // or redirect to 404 page or similar
   }
-  const propertySlug = params.slug;
+  const propertySlug = params?.slug;
   const propertyData = properties.find(
     (property) => property.slug === propertySlug
   );
