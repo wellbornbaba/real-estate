@@ -19,18 +19,7 @@ interface PropertyPageProps {
   };
 }
 
-
-export async function generateStaticParams() {
-  return properties.map((property) => ({
-    slug: property.slug,
-  }));
-}
-
-
 export default async function PropertyPage({ params }: PropertyPageProps) {
-  if (!params) {
-    throw new Error("Property not found"); // or redirect to 404 page or similar
-  }
   const {slug } = await params;
   const propertyData = properties.find(
     (property) => property.slug === slug
