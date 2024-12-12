@@ -13,13 +13,7 @@ export const metadata = {
   keywords: `company, services`,
 };
 
-interface PropertyPageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default async function PropertyPage({ params }: PropertyPageProps) {
+export default async function PropertyPage({ params }: any) {
   const {slug } = await params;
   const propertyData = properties.find(
     (property) => property.slug === slug
